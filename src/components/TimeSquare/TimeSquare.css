@@ -1,0 +1,27 @@
+.time-square--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: 80px;
+  width: 90px;
+  max-width: 22%;
+  margin-right: 1.5rem;
+}
+
+.time-square--container:last-child {
+  margin-right: 0;
+}
+
+.time-square--time {
+  font-size: 1.8rem;
+}
+
+.time-square--label {
+  color: gray;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
