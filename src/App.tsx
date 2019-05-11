@@ -4,6 +4,7 @@ import differenceInSeconds from 'date-fns/difference_in_seconds'
 
 import Header from './components/Header'
 import Timer from './components/Timer'
+import SelectDate from './components/SelectDate'
 
 import './App.css'
 
@@ -91,6 +92,10 @@ class App extends React.PureComponent<AppProps, AppState> {
     }
   }
 
+  private onDateChange = (newDate: Date) => {
+    this.setState({ targetDate: newDate || DEFAULT_TARGET_DATE }, () => { this.initInterval() })
+  }
+
   public render(): React.ReactNode {
     return (
       <div className="app">
@@ -102,6 +107,7 @@ class App extends React.PureComponent<AppProps, AppState> {
           remainingSeconds={this.state.remainingSeconds}
         />
         <p className="app--time">left until {formatDate(this.state.targetDate, 'dddd, MMM DD [at] h:mm:ss a')}</p>
+        <SelectDate date={this.state.targetDate} onDateChange={this.onDateChange} />
       </div>
     )
   }
