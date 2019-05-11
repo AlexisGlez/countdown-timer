@@ -1,3 +1,34 @@
+# countdown-timer
+A React Project that displays a countdown timer to a target date.
+
+![](gifs/countdown-timer.gif)
+
+### How to test it?
+1- Clone / Download the Project
+
+2- Install dependencies
+
+- With yarn:
+
+      Run `yarn`
+
+- With npm:
+
+      Run `npm i` or `npm install`
+
+3- Run the project.
+- With yarn:
+
+      Run `yarn start`
+
+- With npm:
+
+      Run `npm run start`
+
+4- Go to [http://localhost:3000](http://localhost:3000)
+
+5- Enjoy!
+
 ## Available Scripts
 
 **This project was bootstraped with create-react-app, so you have all their available scripts.**
